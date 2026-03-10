@@ -17,4 +17,12 @@ return false;
 alert("Form submitted successfully!");
 return true;
 
+
 }
+/* Date and Time function */
+function showDateTime(){
+let now = new Date();
+document.getElementById("datetime").innerHTML = now.toLocaleString();
+}
+
+setInterval(showDateTime,1000);
